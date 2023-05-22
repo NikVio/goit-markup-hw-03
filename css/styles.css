@@ -110,8 +110,7 @@ img {
 
 .container {
   width: 1158px;
-  padding: 15px;
-  margin: 15px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 
@@ -119,6 +118,7 @@ img {
 
 .header {
   padding-top: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-flex {
@@ -128,6 +128,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-link-logo {
@@ -173,6 +174,7 @@ img {
 
 .address-list {
   display: flex;
+  padding: 24px 0;
   gap: 40px;
 }
 
@@ -192,8 +194,7 @@ img {
 
 .hero {
   background: var(--hero-back-color);
-  margin-bottom: 120px;
-  text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -201,10 +202,10 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
-  margin-top: 188px;
-  margin-bottom: 48px;
-  margin-left: 316px;
+  padding-bottom: 48px;
   max-width: 496px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-btn {
@@ -219,7 +220,9 @@ img {
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
-  margin-bottom: 188px;
+  display: block;
+  border: none;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -244,6 +247,7 @@ img {
 
 .features {
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .features-list {
@@ -291,6 +295,7 @@ img {
 .teamcards {
   background: var(--cards-back-color);
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .teamcards-list {
@@ -299,6 +304,7 @@ img {
 
 .teamcards-item {
   background: var(--cards-item-back-color);
+
   margin-right: 24px;
   width: calc((100% - 72px) / 4);
 }
@@ -311,22 +317,29 @@ img {
   margin-bottom: 72px;
 }
 
+.teamcards-img {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.teamcards-wrap {
+  padding: 32px 16px;
+}
+
 .teamcards-subtitle {
   margin-bottom: 8px;
-  margin-top: 32px;
   text-align: center;
 }
 
 .teamcards-text {
   color: var(--body-text-color);
   text-align: center;
-  margin-bottom: 32px;
 }
 
 /* Portfolio Main Btn */
 
 .filters {
   padding-bottom: 120px;
+  padding-top: 96px;
 }
 
 .filters-list {
@@ -334,7 +347,6 @@ img {
   gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
-  margin-top: 96px;
 }
 
 .filters-item {
@@ -358,6 +370,7 @@ img {
 .filters-btn:focus {
   background: var(--btn-hover-color);
   color: var(--btn-text-hover-color);
+  border: 1px solid transparent;
 }
 
 /* Portfolio Main Cards */
@@ -370,19 +383,21 @@ img {
 }
 
 .project-item {
-  width: calc((100% - 72px) / 3);
-  flex-grow: 1;
+  width: calc((100% - 48px) / 3);
+}
+
+.project-wrap {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .project-title {
-  margin-top: 32px;
-  margin-left: 16px;
+  margin-bottom: 8px;
 }
 
 .project-text {
   color: var(--body-text-color);
-  margin-bottom: 32px;
-  margin-left: 16px;
 }
 
 /* Footer */
@@ -390,11 +405,11 @@ img {
 .footer {
   background: var(--footer-back-color);
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
   color: var(--footer-text-color);
-  margin-top: 16px;
   max-width: 264px;
 }
 
@@ -406,6 +421,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo {

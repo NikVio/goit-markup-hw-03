@@ -127,7 +127,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 .header-link-logo {
@@ -202,9 +202,8 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
-  padding-bottom: 48px;
   max-width: 496px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   text-align: center;
 }
 
